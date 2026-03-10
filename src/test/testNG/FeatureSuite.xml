@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Feature Suite" thread-count="5" parallel="tests">
+
+    <test verbose="2" preserve-order="true" name="Register Test">
+        <parameter name="os" value="Windows 11"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="FeatureWiseRunner.TS_001_RegisterRunner"/>
+        </classes>
+    </test>
+<!--    <test verbose="2" preserve-order="true" name="Login Test">-->
+<!--        <parameter name="os" value="Windows 11"/>-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="FeatureWiseRunner.TS_002_LoginRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>
